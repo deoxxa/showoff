@@ -1,1 +1,1 @@
-db.createCollection("items", {capped: true, size: 128 * 1024});
+db.createCollection("items", {capped: true, size: 1024 * 1024});
