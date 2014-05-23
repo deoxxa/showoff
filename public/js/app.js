@@ -65,6 +65,16 @@ var ItemCollectionElementView = Backbone.Marionette.ItemView.extend({
   className: "col-xs-12 col-sm-6 col-md-4 col-lg-3",
   template: "#template-item-collection-element",
   templateHelpers: {
+    formatTime: function(){
+        var options = {
+          day: "numeric",
+          month: "short",
+          hour: "2-digit",
+          minute: "2-digit"
+        }
+        var date = new Date(this.time)
+        return date.toLocaleTimeString(navigator.language, options)
+    },
     glyphicon: function glyphicon() {
       switch (this.type) {
         case "question": return "question-sign";
