@@ -161,7 +161,7 @@ app.delete("/item/:id", function(req, res, next) {
   });
 });
 
-server.listen(3000, function() {
+server.listen(process.env.PORT || 3000, function() {
   log.info("listening", {
     application: {
       processId: process.pid,
