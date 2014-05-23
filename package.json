@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git://github.com/deoxxa/showoff.git"
   },
+  "engines": {
+    "node": "~0.10.0"
+  },
   "author": "Conrad Pankoff <deoxxa@fknsrs.biz> (http://www.fknsrs.biz/)",
   "license": "BSD",
   "bugs": {
