@@ -4,7 +4,8 @@
   "description": "what the hell are you doing",
   "main": "index.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "bootstrap": "mongo localhost/showoff mongo-init.js"
   },
   "repository": {
     "type": "git",
