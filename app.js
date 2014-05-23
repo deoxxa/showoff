@@ -9,7 +9,7 @@ var connect_leg = require("connect-leg"),
     randomId = require("proquint-random-id"),
     socketio = require("socket.io");
 
-var db = mongo.db("mongodb://nan.campjs/showoff"),
+var db = mongo.db("mongodb://10.0.0.1/showoff"),
     items = db.collection("items");
 
 var sessionId = randomId();
