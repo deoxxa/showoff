@@ -72,7 +72,7 @@ var ItemCollectionElementView = Backbone.Marionette.ItemView.extend({
         case "notice": return "exclamation-sign";
         case "love": return "heart";
         case "user": return "user";
-        default: return "info-sign";
+        default: return this.type;
       }
     },
   },
